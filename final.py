@@ -1,10 +1,11 @@
-import requests
+
 import time
 from flask import Flask, jsonify, request  # import objects from the Flask model
 app = Flask(__name__)  # define app using Flask
 
 # in_memory = dict()
 in_mem_dict= {}
+#initial idea to turn this work but failed
 
 # # def add(val, data):
 #     curr = time.localtime()
@@ -24,6 +25,7 @@ in_mem_dict= {}
 #                 total = total + list(data.values())[0]['value']
 #     return total
 
+#second idea to work little bit more needs to change and I think this will work, something small mistake I am doing over here.
 
 def timestamp_dict(data):
     ts = time.time()
